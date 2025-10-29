@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Selections</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+     <section class="bgcolor">
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="selection.html" class="active">Coffee Selections</a>
+        <a href="equipment.html">Brewing Equipment</a>
+        <a href="event.html">Events and Workshops</a>
+        <a href="cart.html">Shopping Cart</a>
+        <a href="subscription.html">Special Offers and Subscriptions</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <div class="shopname"><span class="sthalf">Bean</span>Boutique</div>
+    </div>
+    <!-- navbar -->
+     
+
+    <div class="container">
+        <h2>Coffee Selections</h2>
+        <div class="search">
+            <input type="text" id="searchinput" placeholder="Enter drink name...">
+        </div>
+    </div>
+
+    
+        <div class="container">
+            <h2>Our Populer Signiture</h2>
+            <div class="row">
+                <div class="col4">
+                    <img src="./iced_brown_suga-shaken_espresso.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Iced Brown Suger Shaken Espreesso</h4>
+                        <p>9000MMK</p>
+                        <button class="btn add-to-cart" data-name="Iced Brown Sugar Shaken Espresso"
+                            data-price="9000">Order</button>
+                    </div>
+                </div>
+
+                <div class="col4">
+                    <img src="./choco_milkshake.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Special Choco Milkshake</h4>
+                        <p>9300MMK</p>
+                        <button class="btn add-to-cart" data-name="Special Choco Milkshake"
+                            data-price="9300">Order</button>
+                    </div>
+                </div>
+
+                <div class="col4">
+                    <img src="./mattcha-coffee.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Matcha Coffee Latte{hot}</h4>
+                        <p>9800MMK</p>
+                        <button class="btn add-to-cart" data-name="Iced Brown Sugar Shaken Espresso"
+                            data-price="9800">Order</button>
+                    </div>
+                </div>
+
+                <div class="col4">
+                    <img src="./matcha_coffee_ice.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Matcha Coffee Latte{ice}</h4>
+                        <p>9800MMK</p>
+                        <button class="btn add-to-cart" data-name="Special Choco Milkshake"
+                            data-price="9800">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--coffee selections -->
+        <div class="container">
+            <h2>Coffee Series</h2>
+            <div class="row">
+                <div class="col4">
+                    <img src="./espresso.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Espreesso</h4>
+                        <p>8000MMK</p>
+                        <button class="btn add-to-cart" data-name="Espresso" data-price="8000">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./americano.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Americano</h4>
+                        <p>8500MMK</p>
+                        <button class="btn add-to-cart" data-name="Americano" data-price="8500">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./cappucino.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Cappucino</h4>
+                        <p>8000MMK</p>
+                        <button class="btn add-to-cart" data-name="Cappucino" data-price="8000">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./latte.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Latte</h4>
+                        <p>7800MMK</p>
+                        <button class="btn add-to-cart" data-name="Latte" data-price="7800">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h2>Coffee Series</h2>
+            <div class="row">
+                <div class="col4">
+                    <img src="./mocha.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Mocha</h4>
+                        <p>8300MMK</p>
+                        <button class="btn add-to-cart" data-name="Mocha" data-price="8300">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./ice_americano.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Iced Americano</h4>
+                        <p>8500MMK</p>
+                        <button class="btn add-to-cart" data-name="Iced Americano" data-price="8500">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./ice_cappucino.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Iced Cappucino</h4>
+                        <p>8000MMK</p>
+                        <button class="btn add-to-cart" data-name="Iced Cappucino" data-price="8000">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./ice_latte.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Iced Latte</h4>
+                        <p>7800MMK</p>
+                        <button class="btn add-to-cart" data-name="Iced Latte" data-price="7800">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- coffee selections -->
+
+        <!-- Matcha series -->
+        <div class="container">
+            <h2>Matcha Series</h2>
+            <div class="row">
+                <div class="col4">
+                    <img src="./matcha_latte.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Matcha Latte</h4>
+                        <p>8800MMK</p>
+                        <button class="btn add-to-cart" data-name="Matcha Latte" data-price="8800">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./ice_matcha.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Iced Matcha</h4>
+                        <p>8500MMK</p>
+                        <button class="btn add-to-cart" data-name="Iced Matcha" data-price="8500">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./matcha_frappe.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Matcha Frappe</h4>
+                        <p>8900MMK</p>
+                        <button class="btn add-to-cart" data-name="Matcha Frappe" data-price="8900">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./matcha_with_cream_or_milk.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Matcha with cream or milk</h4>
+                        <p>8800</p>
+                        <button class="btn add-to-cart" data-name="Matcha with cream or milk"
+                            data-price="8800">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Matcha series -->
+
+        <!-- Choco series -->
+        <div class="container">
+            <h2>Choco Series</h2>
+            <div class="row">
+                <div class="col4">
+                    <img src="./hot_choco.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Hot Choco</h4>
+                        <p>8900MMK</p>
+                        <button class="btn add-to-cart" data-name="Hot Choco" data-price="8900">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./ice_choco.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Iced Choco</h4>
+                        <p>8900MMK</p>
+                        <button class="btn add-to-cart" data-name="Iced Matcha" data-price="8900">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./choco_milkshake1.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Choco Milkshake</h4>
+                        <p>8900MMK</p>
+                        <button class="btn add-to-cart" data-name="Choco Milkshake" data-price="8900">Order</button>
+                    </div>
+                </div>
+                <div class="col4">
+                    <img src="./vegan_hot_chocolate.jpg" alt="" class="myimg">
+                    <div class="card-body">
+                        <h4>Vegan Hot Chocolate</h4>
+                        <p>9100MMK</p>
+                        <button class="btn add-to-cart" data-name="Choco Milkshake" data-price="9100">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- choco series -->
+
+        <div class="textend">
+            <a href="cart.html" class="btn btn-secondary">View Cart</a>
+        </div>
+
+        </section>
+
+        <!-- footer -->
+        <footer class="ftbgcolor">
+            <div class="container">
+                <div class="row">
+                    <div class="col4">
+                        <h2>
+                            Bean Boutique
+                        </h2>
+                        <p>Warm cups,warmer hearts!</p>
+
+                    </div>
+                    <div class="col4">
+                        <h4>Quick link</h4>
+                        <a href="index.html" class="ftlink">Home</a>
+                        <a href="selection.html" class="ftlink">Selections</a>
+                        <a href="equipment.html" class="ftlink">Equipment</a>
+                        <a href="event.html" class="ftlink">Events</a>
+                        <a href="cart.html" class="ftlink">Cart</a>
+                        <a href="subscription.html" class="ftlink">Subscriptions</a>
+                    </div>
+                    <div class="col4">
+                        <h4>Contact Information</h4>
+                        <p>No.12, Hlanden St,Yangon</p>
+                        <p>09-546895432</p>
+                        <p>Bean Boutique</p>
+                    </div>
+                    <div class="col4">
+                        <h4>Follow Us</h4>
+                        <i class="bi bi-facebook fticons"></i>
+                        <i class="bi bi-instagram fticons"></i>
+                        <i class="bi bi-twitter-x fticons"></i>
+                        <i class="bi bi-linkedin fticons"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+        <script src="script.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+        const searchInput = document.getElementById("searchinput");
+        const products = document.querySelectorAll(".container .row .col4"); // More specific selector
+    
+        searchInput.addEventListener("keyup", function () {
+          const filter = searchInput.value.toLowerCase();
+    
+          products.forEach(product => {
+            const titleElement = product.querySelector("h4");
+            if (titleElement && titleElement.textContent.toLowerCase().includes(filter)) {
+              product.style.display = ""; // Show product
+            } else if (titleElement) {
+              product.style.display = "none"; // Hide product
+            }
+          });
+        });
+      });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <!-- navbar -->
+     <section class="bgcolor">
+    
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="selection.html">Selections</a>
+        <a href="equipment.html" class="active">Brewing Equipment</a>
+        <a href="event.html">Events and Workshops</a>
+        <a href="cart.html">Shopping Cart</a>
+        <a href="subscription.html">Special Offers and Subscriptions</a>
+    
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <div class="shopname"><span class="sthalf">Bean</span>Boutique</div>
+    </div>
+
+    
+    <!-- navbar -->
+
+<!-- brewing equipment -->
+
+        <div class="container">
+            <h2>Coffee Beans</h2>
+            <div class="row">
+                <div class="col4">
+                    <div class="box">
+                        <div class="card-body">
+                            <img src="./coffee_arabica.jpg" alt="" class="myimg">
+                            <h4>Arabica</h4>
+                            <p>price: 10000(10g)</p>
+                            <button class="btn add-to-cart" data-name="Arabica" data-price="10000">Order</button>
+                            <p>slightly larger, elliptical shape</p>
+                            <p>grows at higher altitude</p>
+                            <p>higher acidity than Robusta</p>
+                            <p>complex flavor & aroma</p>
+                            <p>recommended for filter coffee(e.g., v60, French press, siphon, Chemex, Aeropress)</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="box">
+                        <img src="./coffee_robusta.jpg" alt="" class="myimg">
+                        <div class="card-body">
+                            <h4>Robusta</h4>
+                            <p>price: 10000(10g)</p>
+                            <button class="btn add-to-cart" data-name="Robusta" data-price="10000">Order</button>
+                            <p>rounder shape</p>
+                            <p>grows at lowlands; pest-resistant</p>
+                            <p>higher caffeine content</p>
+                            <p>heavier body & mouthfeel</p>
+                            <p>recommended for espresso (blend with Arabica)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="box">
+                        <img src="./coffee_liberica.jpg" alt="" class="myimg">
+                        <div class="card-body">
+                            <h4>Liberica</h4>
+                            <p>price: 10000(10g)</p>
+                            <button class="btn add-to-cart" data-name="Liberica" data-price="10000">Order</button>
+                            <p>asymmetrical, almond-shaped</p>
+                            <p>grows at low to medium altitudes</p>
+                            <p>'Barako' coffee</p>
+                            <p>full flavor & slightly smokey</p>
+                            <p>slightly lower caffeine content than Arabica & Robusta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="box">
+                        <img src="./coffee_excelsa.jpg" alt="" class="myimg">
+                        <div class="card-body">
+                            <h4>Excelsa</h4>
+                            <p>price: 10000(10g)</p>
+                            <button class="btn add-to-cart" data-name="Excelsa" data-price="10000">Order</button>
+                            <p>rounded, teardrop shape but smaller than Liberica</p>
+                            <p>grows at lower to medium low altitudes</p>
+                            <p>aromatic with a strong earthy flavor</p>
+                            <p>best blended with other beans for a more robust flavor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+ <div class="container">
+            <h2>Brewing Equipment</h2>
+            <div class="row">
+                <div class="col4">
+                    <div class="box2">                        
+                        <div class="card-body">
+                        <img src="./drip.jpg" alt="" class="myimg">
+                        <h4>Drip</h4>
+                        <p>200000MMK</p>
+                        <button class="btn add-to-cart" data-name="Drip" data-price="200000">Order</button>
+                        <p style="text-align: left;">1. Fill thr reservior with water.</p>
+                        <p style="text-align: left;">2. Place the fliter in the brewing basket.</p>
+                        <p style="text-align: left;">3. Add the ground coffee into the filter.</p>
+                        <p style="text-align: left;">4. Tirn on the machine and wait for the brew cycle to complete.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="box2">
+                        <img src="./single_group.jpg" alt="" class="myimg">
+                        <div class="card-body">
+                        <h4>Single Group (Single Espresso Machine)</h4>
+                        <p>350000MMK</p>
+                        <button class="btn add-to-cart" data-name="Single Espresso Machine" data-price="350000">Order</button>
+                        <p style="text-align: justify;">An espresso machine with one group head,designed to produce one or two espresso at a time.</p>
+                        <p style="text-align: left;">1. Prehear the espresso maker.</p>
+                        <p style="text-align: left;">2. Grind and measure the coffee.</p>
+                        <p style="text-align: left;">3. Select the filter basket and add grounds.(10-12 grams for one shot and 18-20 grams for two shot and use Freshly ground
+whole bean coffee.)</p>
+                        <p style="text-align: left;">4. Tamp the espresso ground.</p>
+                        <p style="text-align: left;">5. Lock in the portafilter.</p>
+                        <p style="text-align: left;">6. pull a shot.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="box2">
+                        <img src="./double_group.jpg" alt="" class="myimg">
+                        <div class="card-body">
+                        <h4>Double Group (Double Espresso Machine)</h4>
+                        <p>450000MMK</p>
+                        <button class="btn add-to-cart" data-name="Double Espreesso Machine" data-price="450000">Order</button>
+                        <p style="text-align: justify;">An espresso machine with two group head,allowing for simultaneous preparation of two espresso shots.</p>
+                        <p style="text-align: left;">1. Prehear the espresso maker.</p>
+                        <p style="text-align: left;">2. Grind and measure the coffee.</p>
+                        <p style="text-align: left;">3. Select the filter basket and add grounds.(10-12 grams for one shot and 18-20 grams for two shot and use Pre-ground coffee.)</p>
+                        <p style="text-align: left;">4. Tamp the espresso ground.</p>
+                        <p style="text-align: left;">5. Lock in the portafilter.</p>
+                        <p style="text-align: left;">6. pull a shot.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="box2">
+                        <img src="./steel_warm.jpg" alt="" class="myimg">
+                        <div class="card-body">
+                        <h4>Stream Warm</h4>
+                        <p>320000MMK</p>
+                        <button class="btn add-to-cart" data-name="Stream Warm" data-price="320000">Order</button>
+                        <p style="text-align: left;">1. Add milk to the pitcher.</p>
+                        <p style="text-align: left;">2. Insert the steam wand.</p>
+                        <p style="text-align: left;">3. Create desired amount.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brewing equipment -->
+
+         <div class="container">
+            <h2>Brewing Equipment</h2>
+            <div class="row">
+                <div class="col4">
+                    <div class="box2">                        
+                        <div class="card-body">
+                        <img src="./machine1.jpg" alt="" class="myimg">
+                        <h4>Manual Coffee Grinder</h4>
+                        <p>150000MMK</p>
+                        <button class="btn add-to-cart" data-name="Manual Coffee Grinder" data-price="2150000">Order</button>
+                        <p style="text-align: left;">1. Get Familiar with Your Manual Coffee Grinder</p>
+                        <p style="text-align: left;">2. Adjust the Grind Size</p>
+                        <p style="text-align: left;">3. Measure and Add the Coffee Beans</p>
+                        <p style="text-align: left;">4. Start Grinding</p>
+                        <p style="text-align: left;">5. Collect the Ground Coffee</p>
+                        <p style="text-align: left;">6. Clean and Maintain Your Grinder</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="box2">
+                        <img src="./machine2.jpg" alt="" class="myimg">
+                        <div class="card-body">
+                        <h4>breville barista express(all in one espresso machine)</h4>
+                        <p>400000MMK</p>
+                        <button class="btn add-to-cart" data-name="Single Espresso Machine" data-price="400000">Order</button>
+                        <p style="text-align: left;">1. Prep: Fill tank, turn on, and run a preheat shot (lock portafilter, press 2 CUP).</p>
+                        <p style="text-align: left;">2. Dose: Set grind (start 4-6), place portafilter, and push to grind.</p>
+                        <p style="text-align: left;">3. Tamp: Tamp firm, level the surface, and lock portafilter tight.</p>
+                        <p style="text-align: left;">4. Brew: Place cup, press 2 CUP. Monitor flow/pressure. Stop at 25-30 seconds.</p>
+                        <p style="text-align: left;">5. Clean: Remove portafilter, knock out puck, and flush the Group Head (press 1 CUP).</p>
+                        <p>Steaming Milk (Optional)</p>
+                        <p style="text-align: left;">1. Purge: Briefly turn the steam dial to STEAM to release water, then stop.</p>
+                        <p style="text-align: left;">2. Stretch: Dip the wand tip just below the milk surface and turn on the steam to add air.</p>
+                        <p style="text-align: left;">3. Texture: Submerge the tip deeper to create a whirlpool (microfoam).</p>
+                        <p style="text-align: left;">4. Stop: Turn the steam off when the jug is too hot to comfortably touch.</p>
+                        <p style="text-align: left;">5. Clean: Immediately wipe the wand and purge it a final time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="box2">
+                        <img src="./machine3.jpg" alt="" class="myimg">
+                        <div class="card-body">
+                        <h4>Moka Pot</h4>
+                        <p>180000MMK</p>
+                        <button class="btn add-to-cart" data-name="Moka Pot" data-price="180000">Order</button>
+                        <p style="text-align: left;">1. Fill Base: Add hot water up to the safety valve.</p>
+                        <p style="text-align: left;">2. Add Coffee: Fill the basket with fine grounds; do not tamp.</p>
+                        <p style="text-align: left;">3. Assemble: Place the basket in the base and screw the top on tight.</p>
+                        <p style="text-align: left;">4. Heat: Brew over medium-low heat.</p>
+                        <p style="text-align: left;">5. Stop: Remove immediately when it starts to gurgle (to prevent bitterness).</p>
+                        <p style="text-align: left;">6. Serve: Pour and enjoy the coffee.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="box2">
+                        <img src="./machine4.jpg" alt="" class="myimg">
+                        <div class="card-body">
+                        <h4>Areopress Coffee Maker</h4>
+                        <p>300000MMK</p>
+                        <button class="btn add-to-cart" data-name="Areopress Coffee Maker" data-price="300000">Order</button>
+                        <p style="text-align: left;">1. Prep: Put filter in cap, twist onto chamber. Place on cup.</p>
+                        <p style="text-align: left;">2. Add: Scoop in coffee (medium-fine grind).</p>
+                        <p style="text-align: left;">3. Pour: Add hot water (to desired level). Stir briefly.</p>
+                        <p style="text-align: left;">4. Press: Insert plunger and press down slowly until you hear a hiss.</p>
+                        <p style="text-align: left;">5. Clean: Unscrew cap and push plunger all the way to eject the puck.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- footer -->
+    <footer class="ftbgcolor">
+        <div class="container">
+            <div class="row">
+                <div class="col4">
+                    <h2>
+                        Bean Boutique
+                    </h2>
+                    <p>Warm cups,warmer hearts!</p>
+
+                </div>
+                <div class="col4">
+                    <h4>Quick link</h4>
+                    <a href="index.html" class="ftlink">Home</a>
+                    <a href="selection.html" class="ftlink">Coffee Selections</a>
+                    <a href="equipment.html" class="ftlink">Equipment</a>
+                    <a href="event.html" class="ftlink">Events and Workshops</a>
+                    <a href="cart.html" class="ftlink">Shopping Cart</a>
+                    <a href="subscription.html" class="ftlink">Special Offers and Subscriptions</a>
+                </div>
+                <div class="col4">
+                    <h4>Contact Information</h4>
+                    <p>No.12, Hlanden St,Yangon</p>
+                    <p>09-546895432</p>
+                    <p>Bean Boutique</p>
+                </div>
+                <div class="col4">
+                    <h4>Follow Us</h4>
+                    <i class="bi bi-facebook fticons"></i>
+                    <i class="bi bi-instagram fticons"></i>
+                    <i class="bi bi-twitter-x fticons"></i>
+                    <i class="bi bi-linkedin fticons"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script src="script.js"></script>
+</body>
+</html>

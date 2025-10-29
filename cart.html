@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <!-- navbar -->
+     <section class="bgcolor">
+    
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="selection.html">Coffee Selections</a>
+        <a href="equipment.html">Brewing Equipment</a>
+        <a href="event.html">Events and Workshops</a>
+        <a href="cart.html" class="active">Shopping Cart</a>
+        <a href="subscription.html">Special Offers and Subscriptions</a>
+    
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <div class="shopname"><span class="sthalf">Bean</span>Boutique</div>
+    </div>
+
+    
+    <!-- navbar -->
+
+<!-- cart -->
+    
+        <div class="container">
+            <h2>Your Cart</h2>
+            <table>
+            <thead>           
+            
+                <tr>
+                <th>Drink Name</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+                </tr>
+                
+                </thead> 
+                <tbody id="cart-body"></tbody>
+            </table>
+
+            <h2 class="text-end">Total<span id="total"></span></h2>
+
+
+    <a href="selection.html" class="btn btn-secondary">Back to Selections</a>
+        </div>
+     </section>
+    <!-- cart -->
+
+
+    <!-- footer -->
+    <footer class="ftbgcolor">
+        <div class="container">
+            <div class="row">
+                <div class="col4">
+                    <h2>
+                        Bean Boutique
+                    </h2>
+                    <p>Warm cups,warmer hearts!</p>
+
+                </div>
+                <div class="col4">
+                    <h4>Quick link</h4>
+                    <a href="index.html" class="ftlink">Home</a>
+                    <a href="selection.html" class="ftlink">Selections</a>
+                    <a href="equipment.html" class="ftlink">Equipment</a>
+                    <a href="event.html" class="ftlink">Events</a>
+                    <a href="cart.html" class="ftlink">Cart</a>
+                    <a href="subscription.html" class="ftlink">Subscriptions</a>
+                </div>
+                <div class="col4">
+                    <h4>Contact Information</h4>
+                    <p>No.12, Hlanden St,Yangon</p>
+                    <p>09-546895432</p>
+                    <p>Bean Boutique</p>
+                </div>
+                <div class="col4">
+                    <h4>Follow Us</h4>
+                    <i class="bi bi-facebook fticons"></i>
+                    <i class="bi bi-instagram fticons"></i>
+                    <i class="bi bi-twitter-x fticons"></i>
+                    <i class="bi bi-linkedin fticons"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+     <script src="script.js"></script>
+    <script>
+         
+      document.addEventListener('DOMContentLoaded', () => {
+        const cartBody = document.getElementById('cart-body');
+        const totalElement = document.getElementById('total');
+        let cart = JSON.parse(sessionStorage.getItem('shoppingCart')) || [];
+        let cartTotal = 0;
+
+        function renderCart() {
+          cartBody.innerHTML = ''; // Clear the cart display
+          cartTotal = 0;
+
+          if (cart.length === 0) {
+            cartBody.innerHTML = '<tr><td colspan="5">Your cart is empty.</td></tr>';
+            totalElement.textContent = ' 0 MMK';
+            return;
+          }
+
+          cart.forEach((item, index) => {
+            const itemTotal = item.price * item.quantity;
+            cartTotal += itemTotal;
+
+            const row = document.createElement("tr");
+            row.innerHTML = `
+              <td>${item.name}</td>
+              <td>${item.quantity}</td>
+              <td>${item.price.toLocaleString()} MMK</td>
+              <td>${itemTotal.toLocaleString()} MMK</td>
+              <td><button class="removebtn" data-index="${index}">Remove</button></td>
+            `;
+            cartBody.appendChild(row);
+          });
+
+          totalElement.textContent = ` ${cartTotal.toLocaleString()} MMK`;
+
+          // Add event listeners to the new remove buttons
+          addRemoveListeners();
+        }
+
+        function addRemoveListeners() {
+          const removeButtons = document.querySelectorAll('.removebtn');
+          removeButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+              const itemIndex = parseInt(e.target.dataset.index, 10);
+              cart.splice(itemIndex, 1); // Remove item from array
+              sessionStorage.setItem('shoppingCart', JSON.stringify(cart)); // Update sessionStorage
+              renderCart(); // Re-render the cart
+            });
+          });
+        }
+
+        renderCart();
+      });
+    </script>
+</body>
+</html>

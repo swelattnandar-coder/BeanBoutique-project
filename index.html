@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div id="discountModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+    aria-describedby="modalDesc">
+    <div class="modal-content">
+      <span class="close" role="button" tabindex="0" aria-label="Close modal">&times;</span>
+      <h2 id="modalTitle">Get 30% off your first purchase</h2>
+      <p id="modalDesc">Sign up with your email to claim your discount.</p>
+      <input type="email" id="emailInput" placeholder="Enter your email" aria-label="Email address">
+      <button onclick="claimDiscount()">Claim Discount</button>
+    </div>
+  </div>
+  <!-- Modal end -->
+
+  <!-- Navbar -->
+  <section class="bgcolor">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="selection.html">Coffee Selections</a>
+      <a href="equipment.html">Brewing Equipment</a>
+      <a href="event.html">Events and Workshops</a>
+      <a href="cart.html">Shopping Cart</a>
+      <a href="subscription.html">Special Offers and Subscriptions</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div class="shopname"><span class="sthalf">Bean</span>Boutique</div>
+    </div>
+
+    <!-- Welcome -->
+    <div class="slide">
+      <div class="slide-text">
+        <h1>Welcome To Bean Boutique</h1>
+        <h3>Warm cups, warmer hearts!</h3>
+      </div>
+    </div>
+
+    <!-- Coffee Beans -->
+    <div class="container">
+      <h2>Coffee Beans</h2>
+      <div class="row">
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./coffee_arabica.jpg" alt="Arabica" class="myimg">
+              <h4>Arabica</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./coffee_robusta.jpg" alt="Robusta" class="myimg">
+              <h4>Robusta</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./coffee_liberica.jpg" alt="Liberica" class="myimg">
+              <h4>Liberica</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./coffee_excelsa.jpg" alt="Excelsa" class="myimg">
+              <h4>Excelsa</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bean Boutique -->
+    <div class="container">
+      <h2>Bean Boutique</h2>
+      <div class="row">
+        <div class="col4">
+          <div class="box1">
+            <div class="card-body">
+              <img src="./1st_in.jpg" alt="First floor inside" class="myimg1">
+              <h4>First floor inside</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box1">
+            <div class="card-body">
+              <img src="./1st_out.jpg" alt="First floor outside" class="myimg1">
+              <h4>First floor outside</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box1">
+            <div class="card-body">
+              <img src="./2nd_floor.jpg" alt="Second floor" class="myimg1">
+              <h4>Second floor</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box1">
+            <div class="card-body">
+              <img src="./coffee_bar.jpg" alt="Coffee Bar" class="myimg1">
+              <h4>Coffee Bar</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Customers -->
+    <div class="container">
+      <h2>Our Customers</h2>
+      <div class="row">
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./p1.jpg" alt="Customer 1" class="myimg">
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./p2.jpg" alt="Customer 2" class="myimg">
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./p3.jpg" alt="Customer 3" class="myimg">
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./p4.jpg" alt="Customer 4" class="myimg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brewing Equipment -->
+    <div class="container">
+      <h2>Brewing Equipment</h2>
+      <div class="row">
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./drip.jpg" alt="Drip" class="myimg">
+              <h4>Drip</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./single_group.jpg" alt="Single Group" class="myimg">
+              <h4>Single Group (Single Espresso Machine)</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./double_group.jpg" alt="Double Group" class="myimg">
+              <h4>Double Group (Double Espresso Machine)</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./steel_warm.jpg" alt="Steel Warm" class="myimg">
+              <h4>Stream Warm</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coffee Brewing -->
+    <div class="container">
+      <h2>Coffee Brewing</h2>
+      <div class="row">
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./cb1.jpg" alt="Coffee brewing 1" class="myimg">
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./cb2.jpg" alt="Coffee brewing 2" class="myimg">
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./cb3.jpg" alt="Coffee brewing 3" class="myimg">
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="box">
+            <div class="card-body">
+              <img src="./cb4.jpg" alt="Coffee brewing 4" class="myimg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section end -->
+
+  <!-- Footer -->
+  <footer class="ftbgcolor">
+    <div class="container">
+      <div class="row">
+        <div class="col4">
+          <h2>Bean Boutique</h2>
+          <p>Warm cups, warmer hearts!</p>
+        </div>
+        <div class="col4">
+          <h4>Quick Links</h4>
+          <a href="index.html" class="ftlink">Home</a>
+          <a href="selection.html" class="ftlink">Selections</a>
+          <a href="equipment.html" class="ftlink">Equipment</a>
+          <a href="event.html" class="ftlink">Events</a>
+          <a href="cart.html" class="ftlink">Cart</a>
+          <a href="subscription.html" class="ftlink">Subscriptions</a>
+        </div>
+        <div class="col4">
+          <h4>Contact Information</h4>
+          <p>No.12, Hlanden St, Yangon</p>
+          <p>09-546895432</p>
+          <p>Bean Boutique</p>
+        </div>
+        <div class="col4">
+          <h4>Follow Us</h4>
+          <i class="bi bi-facebook fticons"></i>
+          <i class="bi bi-instagram fticons"></i>
+          <i class="bi bi-twitter-x fticons"></i>
+          <i class="bi bi-linkedin fticons"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <script src="script.js"></script>
+  <script>
+    const modal = document.getElementById("discountModal");
+    const closeBtn = document.querySelector(".close");
+
+    window.onload = function () {
+      if (!localStorage.getItem("visited")) {
+        modal.style.display = "flex";
+        localStorage.setItem("visited", "true");
+      }
+    };
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    function claimDiscount() {
+      const email = document.getElementById("emailInput").value.trim();
+      if (email && email.includes("@")) {
+        alert("Thanks for signing up! Your 30% discount code is: WELCOME TO BeanBoutique");
+        modal.style.display = "none";
+      } else {
+        alert("Please enter a valid email.");
+      }
+    }
+
+    window.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</body>
+
+</html>
